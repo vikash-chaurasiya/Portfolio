@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+    <title>Portfolio</title>
+    <!-- FontAwesome--------------- -->
+    <script src="https://kit.fontawesome.com/86253ff43d.js" crossorigin="anonymous"></script>
+
+    <!-- ---------Fevicon-------------------- -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- --------------Google fonts----------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header1">
+        <nav id="sticky">
+            <img src="images/logo.png" alt="logo.png" class="logo">
+            <ul id="sideMenu">
+                <li><a href="#header1">Home</a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times fa-2x" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fas fa-bars fa-2x" onclick="openMenu()"></i>
+        </nav>
+
+        <div class="container">
+            <div class="header-text">
+                <p>Hello, </p>
+                <h1>I'm <span>Vikash</span></h1>
+                <span>Frontend Developer <br> from Delhi</span>
+            </div> <br><br>
+            <button id="btn-hire">Hire Me</button>
+        </div>
+    </div>
+
+    <!-- ------------------- about --------------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="profile-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>I am Vikash Chaurasia.
+                        A b.tech graduate from Inderprastha Engineering college (ghaziabad).
+                        I live in Delhi and my home town in Gorakhpur. <br>
+                        I am talented, ambitious and hardworking individual with skill in web development . <br>
+                        I use creative approch to solve problem . <br>
+                        <span>I 🧡 Web Developing .</span> </p>
+                    <div class="tab-tittle">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Certificate</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML & CSS ⭐⭐⭐⭐</li>
+                            <li><span>JavaScript ⭐⭐⭐⭐</li>
+                            <li><span>JQuery ⭐⭐⭐</li>
+                            <li><span>Python ⭐⭐</span></li>
+                            <li><span>Git/Github ⭐⭐⭐⭐</span></li>
+                            <li><span>Docker ⭐⭐</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Modern Frontend Developer from SkillUP</li>
+                            <li><span>JavaScript</span><br>JavaScript Beginners to Advance</li>
+                            <li><span>HTML & Css</span><br>Modern HTML & CSS from the beginning (Udemy)</li>
+                            <li><span>Python & Machine learning </span><br>Organization : Ducate</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2016 - 2020</span><br>Bachelor Of Technology (I.T) <br> Inderprastha Engineering
+                                college </li>
+                            <li><span>2014 - 2016</span><br>Senior Secondary Examination <br> Janta Intermediate College
+                            </li>
+                            <li><span>2011 - 2013</span><br>Higher Secondary Examination <br> SDDT inter college </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------services-------------------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Frontend Developing</h2>
+                    <p>I gain Knowledge in Frontend by HTML, Css and Javascript becouse of this language I make
+                        beutiful responsive and functional website
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-drafting-compass"></i>">
+                    <h2>UI/UX Design</h2>
+                    <p>I am beginner in UI / UX design but not in creative , also good in drawing .
+                        Designing is the part of life .
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+
+                    <i class="fas fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>Knowledge in web design comes from experience . For now i have little experience but in future
+                        i sharpen my knowledge with experiece.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------Portfolio------------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Bonsai Website</h3>
+                        <p>This website where you gain knowledge of Bonsai Tree</p>
+                        <a href="https://medicable-sales.000webhostapp.com/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Mini Intro</h3>
+                        <p>A short introduction about Myself</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Portfolio website for Introduction of myshelf</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------------------contact----------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <a href="mailto: jaichaurasia90@gmail.com" style="text-decoration: none; color:aliceblue">
+                        <p><i class="fas fa-paper-plane"></i>jaichaurasia90@gmail.com</p>
+                    </a>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 7379664300</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/jai.chaurasiall/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/jaichaurasia7"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://github.com/vikash7379"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vikash-chaurasia/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" id="btn-cv">Downlod CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright ©️ Vikash. Made with 💖</p>
+    </div>
+
+    <!-- ------------------------JS Script-------------------------------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-content');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link');
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // -----------------------side Menu ----------------------
+
+        let sideMenu = document.getElementById('sideMenu');
+
+        function openMenu() {
+            sideMenu.style.right = '0';
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = '-200px';
+        }
+    </script>
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbwGNawksZ-Q_mayS0aCFVYxhFgrWyVqBCJU2w_D1m0wW6SSsw0VDh7WSvtd_dIjGUr9Ng/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully !"
+                    setTimeout(function () {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
